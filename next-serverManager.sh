@@ -51,7 +51,7 @@ if [[ -f /etc/redhat-release ]]; then
 	unzip next-server-linux-${arch}.zip
 	chmod +x next-server
 	mv next-server /usr/bin/
-	wget -N --no-check-certificate -P /etc/systemd/system/ "https://raw.githubusercontent.com/ljfxz/next-server-install/main/next-server.service"
+	wget -N --no-check-certificate -P /etc/systemd/system/ "https://raw.githubusercontent.com/shandianbird/next-server-install/main/next-server.service"
 	systemctl daemon-reload
 	systemctl enable next-server
 	menu
