@@ -1,0 +1,9 @@
+[Unit]
+Description=next-server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/next-server -c /etc/next-server/config.yml
+
+[Install]
+WantedBy=multi-user.target
