@@ -54,6 +54,10 @@ if [[ -f /etc/redhat-release ]]; then
 	wget -N --no-check-certificate -P /etc/systemd/system/ "https://raw.githubusercontent.com/shandianbird/next-server-install/main/next-server.service"
 	systemctl daemon-reload
 	systemctl enable next-server
+
+    curl -o /usr/bin/nextServerManager -Ls https://raw.githubusercontent.com/shandianbird/next-server-install/main/next-serverManager.sh
+    chmod +x /usr/bin/nextServerManager
+    show_usage
 	menu
 }
 
